@@ -1,0 +1,11 @@
+inputSet:
+  pipeline:
+    identifier: Build_harness_ci_example_1689670998577
+    properties:
+      ci:
+        codebase:
+          build: ""
+  name: yadu
+  identifier: yadu
+  orgIdentifier: default
+  projectIdentifier: Irissuss
