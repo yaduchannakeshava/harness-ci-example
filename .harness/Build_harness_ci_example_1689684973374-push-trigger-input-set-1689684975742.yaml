@@ -1,0 +1,14 @@
+inputSet:
+  name: Build_harness_ci_example_1689684973374-push-trigger-input-set
+  identifier: Build_harness_ci_example_1689684973374pushtriggerinputset
+  orgIdentifier: default
+  projectIdentifier: luck
+  pipeline:
+    identifier: Build_harness_ci_example_1689684973374
+    properties:
+      ci:
+        codebase:
+          build:
+            type: branch
+            spec:
+              branch: <+trigger.branch>
