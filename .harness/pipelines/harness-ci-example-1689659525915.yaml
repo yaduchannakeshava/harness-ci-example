@@ -18,13 +18,6 @@ pipeline:
           execution:
             steps:
               - step:
-                  identifier: npminstall
-                  name: npm_install
-                  spec:
-                    command: npm install
-                  timeout: ""
-                  type: Run
-              - step:
                   identifier: npmtest
                   name: npm_test
                   spec:
@@ -32,16 +25,17 @@ pipeline:
                   timeout: ""
                   type: Run
               - step:
-                  identifier: dockerbuild
-                  name: docker_build
+                  type: BuildAndPushECR
+                  name: BuildAndPushECR_1
+                  identifier: BuildAndPushECR_1
                   spec:
-                    image: plugins/docker
-                    settings:
-                      dry_run: "true"
-                      repo: hello/world
-                      tags: latest
-                  timeout: ""
-                  type: Plugin
+                    connectorRef: connect
+                    region: ap-south-1
+                    account: "506379294322"
+                    imageName: first-push-vijaya
+                    tags:
+                      - firstpush
+                    caching: false
           platform:
             arch: Amd64
             os: Linux
