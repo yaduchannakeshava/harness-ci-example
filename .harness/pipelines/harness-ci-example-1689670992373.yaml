@@ -24,6 +24,17 @@ pipeline:
                     command: npm run test
                   timeout: ""
                   type: Run
+              - step:
+                  type: BuildAndPushECR
+                  name: BuildAndPushECR_1
+                  identifier: BuildAndPushECR_1
+                  spec:
+                    connectorRef: AWSconnect0riris
+                    region: ap-south-1
+                    account: "506379294322"
+                    imageName: first-push
+                    tags:
+                      - push-1
           platform:
             arch: Amd64
             os: Linux
