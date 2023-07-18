@@ -18,30 +18,12 @@ pipeline:
           execution:
             steps:
               - step:
-                  identifier: npminstall
-                  name: npm_install
-                  spec:
-                    command: npm install
-                  timeout: ""
-                  type: Run
-              - step:
                   identifier: npmtest
                   name: npm_test
                   spec:
                     command: npm run test
                   timeout: ""
                   type: Run
-              - step:
-                  identifier: dockerbuild
-                  name: docker_build
-                  spec:
-                    image: plugins/docker
-                    settings:
-                      dry_run: "true"
-                      repo: hello/world
-                      tags: latest
-                  timeout: ""
-                  type: Plugin
           platform:
             arch: Amd64
             os: Linux
