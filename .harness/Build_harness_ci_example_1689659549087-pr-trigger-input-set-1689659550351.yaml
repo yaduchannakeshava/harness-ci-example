@@ -1,0 +1,14 @@
+inputSet:
+  name: Build_harness_ci_example_1689659549087-pr-trigger-input-set
+  identifier: Build_harness_ci_example_1689659549087prtriggerinputset
+  orgIdentifier: default
+  projectIdentifier: irisvijaya
+  pipeline:
+    identifier: Build_harness_ci_example_1689659549087
+    properties:
+      ci:
+        codebase:
+          build:
+            type: PR
+            spec:
+              number: <+trigger.prNumber>
