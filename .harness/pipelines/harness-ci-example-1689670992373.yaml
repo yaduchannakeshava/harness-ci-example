@@ -32,9 +32,9 @@ pipeline:
                     connectorRef: AWSconnect0riris
                     region: ap-south-1
                     account: "506379294322"
-                    imageName: first-push
+                    imageName: din-dong
                     tags:
-                      - push-1
+                      - first-push
           platform:
             arch: Amd64
             os: Linux
