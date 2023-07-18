@@ -1,0 +1,14 @@
+inputSet:
+  name: Build_harness_ci_example_1689670998577-push-trigger-input-set
+  identifier: Build_harness_ci_example_1689670998577pushtriggerinputset
+  orgIdentifier: default
+  projectIdentifier: Irissuss
+  pipeline:
+    identifier: Build_harness_ci_example_1689670998577
+    properties:
+      ci:
+        codebase:
+          build:
+            type: branch
+            spec:
+              branch: <+trigger.branch>
