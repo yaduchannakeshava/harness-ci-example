@@ -24,6 +24,17 @@ pipeline:
                     command: npm run test
                   timeout: ""
                   type: Run
+              - step:
+                  type: BuildAndPushECR
+                  name: BuildAndPushECR_1
+                  identifier: BuildAndPushECR_1
+                  spec:
+                    connectorRef: ecrpush
+                    region: ap-south-1
+                    account: "506379294322"
+                    imageName: harness-yadu
+                    tags:
+                      - latestfirst
           platform:
             arch: Amd64
             os: Linux
