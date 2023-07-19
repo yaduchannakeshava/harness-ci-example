@@ -34,7 +34,7 @@ pipeline:
                     account: "506379294322"
                     imageName: harness-yadu
                     tags:
-                      - latestfirst
+                      - test-repo
           platform:
             arch: Amd64
             os: Linux
