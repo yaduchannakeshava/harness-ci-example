@@ -29,7 +29,7 @@ pipeline:
                   name: BuildAndPushECR_1
                   identifier: BuildAndPushECR_1
                   spec:
-                    connectorRef: ecrpush
+                    connectorRef: vijayacon
                     region: ap-south-1
                     account: "506379294322"
                     imageName: harness-yadu
