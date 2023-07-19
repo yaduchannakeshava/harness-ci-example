@@ -1,0 +1,14 @@
+inputSet:
+  name: Build_harness_ci_example_1689751797786-pr-trigger-input-set
+  identifier: Build_harness_ci_example_1689751797786prtriggerinputset
+  orgIdentifier: default
+  projectIdentifier: ecrpushpr
+  pipeline:
+    identifier: Build_harness_ci_example_1689751797786
+    properties:
+      ci:
+        codebase:
+          build:
+            type: PR
+            spec:
+              number: <+trigger.prNumber>
