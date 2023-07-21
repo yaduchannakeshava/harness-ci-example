@@ -21,7 +21,7 @@ pipeline:
                   identifier: npmtest
                   name: npm_test
                   spec:
-                    shell: Sh
+                    shell: Bash
                     command: |-
                       FROM komljen/ubuntu
                       MAINTAINER Alen Komljen <alen.komljen@live.com>
