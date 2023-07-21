@@ -32,13 +32,13 @@ pipeline:
                     connectorRef: vijayacon
                     region: ap-south-1
                     account: "506379294322"
-                    imageName: harness-yadu
+                    imageName: ci-nodejs
                     tags:
-                      - test-repo
+                      - testing
           platform:
-            arch: Amd64
             os: Linux
+            arch: Amd64
           runtime:
-            spec: {}
             type: Cloud
+            spec: {}
         type: CI
